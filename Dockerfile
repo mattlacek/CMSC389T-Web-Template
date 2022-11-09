@@ -1,8 +1,8 @@
 #Use the node:10-alpine image as a base to
 #create a directory for the app and its node_modules with node as its owner
 FROM node:10-alpine
-RUN mkdir -p ~/node/app/ && chown -R node:node/home/node/app
-WORKDIR ~/node/app
+RUN mkdir -p $HOME/node/app/ && chown -R node:node/home/node/app
+WORKDIR $HOME/node/app
 #install all packages in package.json
 COPY package.json ./
 RUN npm install
