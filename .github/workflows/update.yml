@@ -17,4 +17,5 @@ jobs:
           script: |
             cd CMSC389T-Web-Template
             git pull
-            cp -a index.html /pub/mlacek/
+            cd ..
+            cp -a -f CMSC389T-Web-Template/. /pub/mlacek/
