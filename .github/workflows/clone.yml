@@ -15,5 +15,4 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
             git clone https://github.com/mattlacek/CMSC389T-Web-Template
-            cd ..
-            cp -a CMSC389T-Web-Template/. /pub/mlacek/
+            cp -af CMSC389T-Web-Template /pub/mlacek/
