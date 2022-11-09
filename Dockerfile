@@ -4,7 +4,7 @@ FROM node:10-alpine
 RUN mkdir -p /home/node/app/ && chown -R node:node/home/node/app
 WORKDIR /home/node/app
 #install all packages in package.json
-COPY package.json
+COPY package.json ./
 RUN npm install
 #expose port 8080 and run the app
 EXPOSE 8080
